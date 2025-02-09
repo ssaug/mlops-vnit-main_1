@@ -2,11 +2,11 @@ services:
   flask:
     build: .
     ports:
-      - "5004:5004"
+      - "5002:5002"
     volumes:
       - .:/app
     expose:
-        - "5004"
+        - "5002"
     networks:
         - mlops-network
 

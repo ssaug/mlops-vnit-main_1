@@ -8,7 +8,9 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
-EXPOSE 5000 # port no same as ur app is using
+
+# port no same as ur app is using
+EXPOSE 5002
 
 CMD ["python","app.py"]
 
